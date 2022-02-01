@@ -1,13 +1,13 @@
 from coin import *
 
-btc = Coin(Coins("BTC"), "BTC", "Bitcoin")
+btc = Coin(CoinId("BTC"), "BTC", "Bitcoin")
 print(btc.GetData('eur'))
 
-cro = Coin(Coins("CRO"), "CRO", "Crypto.com Coin")
+cro = Coin(CoinId("CRO"), "CRO", "Crypto.com Coin")
 print(cro.GetData('eur'))
 
-dark = Coin(Coins("DARK"), "DARK", "DarkCrypto")
+dark = Coin(CoinId("DARK"), "DARK", "DarkCrypto")
 print(dark.GetData('eur'))
 
-sky = Coin(Coins("SKY"), "SKY", "DarkCrypto-Share")
+sky = Coin(CoinId("SKY"), "SKY", "DarkCrypto-Share")
 print(sky.GetData('eur'))
