@@ -1,7 +1,13 @@
-from coin import Coin
+from coin import *
 
-sky = Coin("darkcrypto-share", "SKY", "DarkCrypto-Share")
-print(sky.GetData('eur'))
+btc = Coin(Coins("BTC"), "BTC", "Bitcoin")
+print(btc.GetData('eur'))
 
-cro = Coin("crypto-com-chain", "CRO", "Crypto.com Coin")
+cro = Coin(Coins("CRO"), "CRO", "Crypto.com Coin")
 print(cro.GetData('eur'))
+
+dark = Coin(Coins("DARK"), "DARK", "DarkCrypto")
+print(dark.GetData('eur'))
+
+sky = Coin(Coins("SKY"), "SKY", "DarkCrypto-Share")
+print(sky.GetData('eur'))

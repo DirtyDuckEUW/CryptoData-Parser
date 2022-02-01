@@ -1,7 +1,21 @@
 from pycoingecko import CoinGeckoAPI
 
-class Coin:
+__ALLCOINS = {}
 
+__ALLCOINS["CRO"]  = "crypto-com-chain"
+__ALLCOINS["SKY"]  = "darkcrypto-share"
+__ALLCOINS["BTC"]  = "bitcoin"
+__ALLCOINS["DARK"] = "darkcrypto"
+
+@staticmethod
+def Coins(symbol):
+  if __ALLCOINS.__contains__(symbol):
+    return __ALLCOINS[symbol]
+  else:
+    return ""
+
+class Coin:
+  
   def __init__(self, id, symbol, name):
     self.id = id
     self.symbol = symbol
